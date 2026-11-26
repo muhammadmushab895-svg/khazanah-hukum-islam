@@ -1,0 +1,330 @@
+[
+  {
+    "id": "01",
+    "kode": "01",
+    "judul": "Kompilasi Hukum Islam (KHI) & Hukum Keluarga",
+    "deskripsi": "KHI Buku I (Inpres 1/1991), UU Perkawinan, Pencatatan Nikah, Perceraian, Harta Bersama & Hadhanah.",
+    "level": 1,
+    "parent_id": null,
+    "urutan": 1
+  },
+  {
+    "id": "01.01",
+    "kode": "01.01",
+    "judul": "Perkawinan, Pencatatan Nikah, Wali, Mahar & Isbat Nikah",
+    "level": 2,
+    "parent_id": "01",
+    "urutan": 1
+  },
+  {
+    "id": "01.02",
+    "kode": "01.02",
+    "judul": "Hak-Kewajiban Suami Isteri, Poligami & Perjanjian Perkawinan",
+    "level": 2,
+    "parent_id": "01",
+    "urutan": 2
+  },
+  {
+    "id": "01.03",
+    "kode": "01.03",
+    "judul": "Perceraian (Cerai Talak, Cerai Gugat, Rujuk) & Nafkah Iddah/Mut'ah",
+    "level": 2,
+    "parent_id": "01",
+    "urutan": 3
+  },
+  {
+    "id": "01.04",
+    "kode": "01.04",
+    "judul": "Harta Bersama (Gono-Gini), Hadhanah, Nasab & Perwalian",
+    "level": 2,
+    "parent_id": "01",
+    "urutan": 4
+  },
+  {
+    "id": "02",
+    "kode": "02",
+    "judul": "Hukum Kewarisan, Wasiat, Hibah, Wakaf & Zakat",
+    "deskripsi": "KHI Buku II–III, UU Wakaf, 29 Peraturan BWI, UU Zakat & Pengelolaan ZIS/Baitul Mal.",
+    "level": 1,
+    "parent_id": null,
+    "urutan": 2
+  },
+  {
+    "id": "02.01",
+    "kode": "02.01",
+    "judul": "Hukum Kewarisan Islam (Ahli Waris, Bagian, Aul & Rad)",
+    "level": 2,
+    "parent_id": "02",
+    "urutan": 1
+  },
+  {
+    "id": "02.02",
+    "kode": "02.02",
+    "judul": "Wasiat, Wasiat Wajibah & Hibah",
+    "level": 2,
+    "parent_id": "02",
+    "urutan": 2
+  },
+  {
+    "id": "02.03",
+    "kode": "02.03",
+    "judul": "Hukum Perwakafan, Nazhir & Wakaf Produktif (UU Wakaf & BWI)",
+    "level": 2,
+    "parent_id": "02",
+    "urutan": 3
+  },
+  {
+    "id": "02.04",
+    "kode": "02.04",
+    "judul": "Pengelolaan Zakat, Infak, Sedekah & Baitul Mal (UU Zakat & PMA)",
+    "level": 2,
+    "parent_id": "02",
+    "urutan": 4
+  },
+  {
+    "id": "03",
+    "kode": "03",
+    "judul": "Kompilasi Hukum Ekonomi Syariah (KHES) & Hukum Akad",
+    "deskripsi": "PERMA No. 2 Tahun 2008 (Buku I–IV, 43 Bab, 796 Pasal) sebagai hukum materiil ekonomi syariah.",
+    "level": 1,
+    "parent_id": null,
+    "urutan": 3
+  },
+  {
+    "id": "03.01",
+    "kode": "03.01",
+    "judul": "Subjek Hukum, Amwal, Asas, Rukun & Ingkar Janji Akad",
+    "level": 2,
+    "parent_id": "03",
+    "urutan": 1
+  },
+  {
+    "id": "03.02",
+    "kode": "03.02",
+    "judul": "Akad Jual Beli (Ba'i, Murabahah, Salam, Istishna' & Khiyar)",
+    "level": 2,
+    "parent_id": "03",
+    "urutan": 2
+  },
+  {
+    "id": "03.03",
+    "kode": "03.03",
+    "judul": "Akad Kerja Sama (Syirkah, Mudharabah, Musyarakah & Pertanian)",
+    "level": 2,
+    "parent_id": "03",
+    "urutan": 3
+  },
+  {
+    "id": "03.04",
+    "kode": "03.04",
+    "judul": "Akad Jasa & Jaminan (Ijarah, Kafalah, Hawalah, Rahn, Wadi'ah, Wakalah & Qardh)",
+    "level": 2,
+    "parent_id": "03",
+    "urutan": 4
+  },
+  {
+    "id": "04",
+    "kode": "04",
+    "judul": "Fatwa DSN-MUI — Perbankan, Pembiayaan & Bisnis Syariah",
+    "deskripsi": "Koleksi resmi Fatwa DSN-MUI (2017–2026), Ta'limat & Pedoman Implementasi yang terbuka publik.",
+    "level": 1,
+    "parent_id": null,
+    "urutan": 4
+  },
+  {
+    "id": "04.01",
+    "kode": "04.01",
+    "judul": "Penghimpunan Dana, Penjaminan Simpanan, Konversi & Tata Kelola LKS",
+    "level": 2,
+    "parent_id": "04",
+    "urutan": 1
+  },
+  {
+    "id": "04.02",
+    "kode": "04.02",
+    "judul": "Pembiayaan Syariah, Restrukturisasi, Konversi Akad & Lindung Nilai",
+    "level": 2,
+    "parent_id": "04",
+    "urutan": 2
+  },
+  {
+    "id": "04.03",
+    "kode": "04.03",
+    "judul": "Kartu Syariah, Uang Elektronik, Fintech P2P, Emas Digital & Bulion",
+    "level": 2,
+    "parent_id": "04",
+    "urutan": 3
+  },
+  {
+    "id": "04.04",
+    "kode": "04.04",
+    "judul": "Ta'limat, Pedoman Implementasi, Bisnis, Pariwisata & RS Syariah",
+    "level": 2,
+    "parent_id": "04",
+    "urutan": 4
+  },
+  {
+    "id": "05",
+    "kode": "05",
+    "judul": "Pasar Modal Syariah, Sukuk, Takaful & Regulasi OJK / BI",
+    "deskripsi": "Fatwa Pasar Modal & Asuransi Syariah, UU Perbankan Syariah, SBSN, P2SK, POJK, SEOJK & PBI.",
+    "level": 1,
+    "parent_id": null,
+    "urutan": 5
+  },
+  {
+    "id": "05.01",
+    "kode": "05.01",
+    "judul": "Pasar Modal Syariah, Saham, Reksa Dana & Efek Beragun Aset Syariah",
+    "level": 2,
+    "parent_id": "05",
+    "urutan": 1
+  },
+  {
+    "id": "05.02",
+    "kode": "05.02",
+    "judul": "Obligasi Syariah, Sukuk Korporasi & SBSN (Sukuk Negara)",
+    "level": 2,
+    "parent_id": "05",
+    "urutan": 2
+  },
+  {
+    "id": "05.03",
+    "kode": "05.03",
+    "judul": "Asuransi Syariah (Ta'min/Takaful) & Dana Pensiun Syariah",
+    "level": 2,
+    "parent_id": "05",
+    "urutan": 3
+  },
+  {
+    "id": "05.04",
+    "kode": "05.04",
+    "judul": "Regulasi OJK (POJK/SEOJK), Bank Indonesia (PBI), UU P2SK & Akuntansi Syariah",
+    "level": 2,
+    "parent_id": "05",
+    "urutan": 4
+  },
+  {
+    "id": "06",
+    "kode": "06",
+    "judul": "Rumusan Pleno Kamar Agama MA RI (SEMA) & Yurisprudensi",
+    "deskripsi": "Kompilasi Resmi Rumusan Hukum Rapat Pleno Kamar Agama MA RI (2012–2025) & Kaidah Hukum MA.",
+    "level": 1,
+    "parent_id": null,
+    "urutan": 6
+  },
+  {
+    "id": "06.01",
+    "kode": "06.01",
+    "judul": "Rumusan Kamar Agama Bidang Hukum Perkawinan & Keluarga (SEMA 2012–2025)",
+    "level": 2,
+    "parent_id": "06",
+    "urutan": 1
+  },
+  {
+    "id": "06.02",
+    "kode": "06.02",
+    "judul": "Rumusan Kamar Agama Bidang Kewarisan, Wakaf & Hibah (SEMA 2012–2025)",
+    "level": 2,
+    "parent_id": "06",
+    "urutan": 2
+  },
+  {
+    "id": "06.03",
+    "kode": "06.03",
+    "judul": "Rumusan Kamar Agama Bidang Ekonomi Syariah & Jinayat (SEMA 2012–2025)",
+    "level": 2,
+    "parent_id": "06",
+    "urutan": 3
+  },
+  {
+    "id": "06.04",
+    "kode": "06.04",
+    "judul": "Yurisprudensi Tetap, Kaidah Hukum MA RI & Hukum Acara Kamar Agama",
+    "level": 2,
+    "parent_id": "06",
+    "urutan": 4
+  },
+  {
+    "id": "07",
+    "kode": "07",
+    "judul": "Putusan Pengadilan Agama, PTA & Hukum Acara Peradilan Agama",
+    "deskripsi": "Salinan Putusan Resmi Pengadilan Tinggi Agama, PA, Mahkamah Syar'iyah, Buku II & Majalah Badilag.",
+    "level": 1,
+    "parent_id": null,
+    "urutan": 7
+  },
+  {
+    "id": "07.01",
+    "kode": "07.01",
+    "judul": "Putusan Pengadilan Agama & PTA Bidang Perkawinan dan Perceraian",
+    "level": 2,
+    "parent_id": "07",
+    "urutan": 1
+  },
+  {
+    "id": "07.02",
+    "kode": "07.02",
+    "judul": "Putusan Pengadilan Bidang Harta Bersama, Kewarisan, Wakaf & Ekonomi Syariah",
+    "level": 2,
+    "parent_id": "07",
+    "urutan": 2
+  },
+  {
+    "id": "07.03",
+    "kode": "07.03",
+    "judul": "Hukum Acara Peradilan Agama, Gugatan Sederhana, Mediasi, e-Court & Buku II",
+    "level": 2,
+    "parent_id": "07",
+    "urutan": 3
+  },
+  {
+    "id": "07.04",
+    "kode": "07.04",
+    "judul": "Publikasi Resmi Ditjen Badilag MA RI (Majalah Peradilan Agama & Kajian Yudisial)",
+    "level": 2,
+    "parent_id": "07",
+    "urutan": 4
+  },
+  {
+    "id": "08",
+    "kode": "08",
+    "judul": "Jaminan Produk Halal, Haji-Umrah & Qanun Syariat Aceh",
+    "deskripsi": "Regulasi JPH/BPJPH, Haji/BPKH, serta Qanun Hukum Jinayat & Lembaga Keuangan Syariah Aceh.",
+    "level": 1,
+    "parent_id": null,
+    "urutan": 8
+  },
+  {
+    "id": "08.01",
+    "kode": "08.01",
+    "judul": "Jaminan Produk Halal (UU JPH, PP 42/2024 & Peraturan BPJPH)",
+    "level": 2,
+    "parent_id": "08",
+    "urutan": 1
+  },
+  {
+    "id": "08.02",
+    "kode": "08.02",
+    "judul": "Penyelenggaraan Ibadah Haji, Umrah & Keuangan Haji (UU Haji & BPKH)",
+    "level": 2,
+    "parent_id": "08",
+    "urutan": 2
+  },
+  {
+    "id": "08.03",
+    "kode": "08.03",
+    "judul": "Qanun Hukum Jinayat & Hukum Acara Jinayat Aceh (Mahkamah Syar'iyah)",
+    "level": 2,
+    "parent_id": "08",
+    "urutan": 3
+  },
+  {
+    "id": "08.04",
+    "kode": "08.04",
+    "judul": "Qanun Lembaga Keuangan Syariah, Pokok Syariat Islam & Pemerintahan Aceh",
+    "level": 2,
+    "parent_id": "08",
+    "urutan": 4
+  }
+]

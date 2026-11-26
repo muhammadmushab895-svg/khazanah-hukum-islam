@@ -1,0 +1,768 @@
+[
+  {
+    "id": "khes-b1-subjek-amwal",
+    "judul": "KHES Buku I (Bab I–III): Subjek Hukum, Kecakapan Hukum, Perwalian & Amwal (Pasal 1–19)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Definisi subjek hukum (orang & badan hukum/syakhshiyyah i'tibariyyah), kecakapan hukum (usia 18 tahun), pengampuan, asas pemilikan amwal, dan cara perolehan harta.",
+    "tabwib_id": "03.01",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 18,
+      "label_halaman": "Hlm. 18"
+    },
+    "slug": "khes-b1-subjek-amwal",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab01-03",
+    "judul": "KHES Buku II (Bab I–III): Ketentuan Umum, Asas Akad, Rukun, Syarat, Ingkar Janji & Force Majeure (Pasal 20–55)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Definisi 40 istilah akad syariah (Pasal 20), 12 asas akad (Pasal 21), rukun/syarat sah, paksaan/kekhilafan/penipuan, ingkar janji (wanprestasi) & sanksi ganti rugi (Pasal 36–39), keadaan memaksa, dan penafsiran akad.",
+    "tabwib_id": "03.01",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 27,
+      "label_halaman": "Hlm. 27"
+    },
+    "slug": "khes-b2-bab01-03",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab04",
+    "judul": "KHES Buku II Bab IV: Ba'i / Jual Beli (Rukun, Objek, Penyerahan & Syarat Khusus, Pasal 56–90)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Pengaturan rukun ba'i, kesepakatan penjual-pembeli, tempat dan syarat penyerahan, bai' dengan syarat khusus, bai' istighlal, bai' wafa', dan jual beli secara borongan.",
+    "tabwib_id": "03.02",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 42,
+      "label_halaman": "Hlm. 42"
+    },
+    "slug": "khes-b2-bab04",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab05",
+    "judul": "KHES Buku II Bab V: Akibat Ba'i, Ba'i Salam, Ba'i Istishna', Murabahah & Konversi Akad (Pasal 91–133)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Akibat jual beli sah/fasid/batal, ba'i salam (pesanan dengan pembayaran di muka), ba'i istishna' (pembuatan barang), pembiayaan murabahah, serta mekanisme konversi akad murabahah oleh LKS (Pasal 125–133).",
+    "tabwib_id": "03.02",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 52,
+      "label_halaman": "Hlm. 52"
+    },
+    "slug": "khes-b2-bab05",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab06-07",
+    "judul": "KHES Buku II Bab VI–VII: Syirkah (Amwal, Abdan, Wujuh, 'Inan, Mufawadhah) & Syirkah Milk (Pasal 134–230)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Ketentuan kerja sama modal/tenaga/reputasi, pembagian untung-rugi, tanggung jawab sekutu, kepemilikan bersama (syirkah milk), dan tata cara pemisahan harta bersama.",
+    "tabwib_id": "03.03",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 62,
+      "label_halaman": "Hlm. 62"
+    },
+    "slug": "khes-b2-bab06-07",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab08",
+    "judul": "KHES Buku II Bab VIII: Mudharabah — Bagi Hasil Shahibul Mal & Mudharib (Pasal 231–254)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Rukun dan syarat modal mudharabah, kewenangan pengelola (mudharib), prinsip tanggungan kerugian modal pada shahibul mal kecuali kelalaian (ta'addi/taqshir), dan berakhirnya akad.",
+    "tabwib_id": "03.03",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 82,
+      "label_halaman": "Hlm. 82"
+    },
+    "slug": "khes-b2-bab08",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab09",
+    "judul": "KHES Buku II Bab IX: Muzara'ah dan Musaqah — Kerja Sama Pertanian & Perkebunan (Pasal 255–270)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Pengaturan kerja sama penggarapan lahan pertanian (muzara'ah) dan pemeliharaan tanaman/kebun (musaqah) beserta pembagian hasil panen.",
+    "tabwib_id": "03.03",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 87,
+      "label_halaman": "Hlm. 87"
+    },
+    "slug": "khes-b2-bab09",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab10",
+    "judul": "KHES Buku II Bab X: Khiyar — Hak Pilih Pembatalan Akad (Syarth, Naqdi, Ru'yah, 'Aib, Ghabn, Pasal 271–294)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Hak pilih untuk meneruskan atau membatalkan jual beli karena syarat, tenggang pembayaran, melihat objek, cacat tersembunyi ('aib), dan ketimpangan harga/penipuan (ghabn/taghrir).",
+    "tabwib_id": "03.02",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 90,
+      "label_halaman": "Hlm. 90"
+    },
+    "slug": "khes-b2-bab10",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab11",
+    "judul": "KHES Buku II Bab XI: Ijarah, Ijarah Muntahiyah bi al-Tamlik (IMBT) & Safe Deposit Box (Pasal 295–334)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Sewa-menyewa manfaat barang/jasa, kewajiban mu'jir dan musta'jir, risiko kerusakan ma'jur, sewa beli syariah (IMBT), dan layanan penitipan shunduq hifzi ida' (SDB).",
+    "tabwib_id": "03.04",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 97,
+      "label_halaman": "Hlm. 97"
+    },
+    "slug": "khes-b2-bab11",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab12",
+    "judul": "KHES Buku II Bab XII: Kafalah — Penanggungan/Penjaminan Utang & Kewajiban (Pasal 335–361)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Rukun kafalah, kafalah muthlaqah dan muqayyadah, kafalah bi al-nafs dan bi al-mal, serta pembebasan penjamin dari tanggungan.",
+    "tabwib_id": "03.04",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 106,
+      "label_halaman": "Hlm. 106"
+    },
+    "slug": "khes-b2-bab12",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab13",
+    "judul": "KHES Buku II Bab XIII: Hawalah — Pengalihan Utang Piutang (Pasal 362–372)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Syarat pengalihan utang (hawalah al-dayn) dan piutang, persetujuan para pihak, dan akibat hukum bebasnya muhil dari kewajiban.",
+    "tabwib_id": "03.04",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 112,
+      "label_halaman": "Hlm. 112"
+    },
+    "slug": "khes-b2-bab13",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab14",
+    "judul": "KHES Buku II Bab XIV: Rahn — Gadai Syariah & Eksekusi Barang Gadai (Pasal 373–408)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Rukun rahn, kepemilikan dan pemeliharaan marhun, biaya penyimpanan, pembatalan akad, serta mekanisme penjualan/eksekusi harta gadai saat wanprestasi (Pasal 402–408).",
+    "tabwib_id": "03.04",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 115,
+      "label_halaman": "Hlm. 115"
+    },
+    "slug": "khes-b2-bab14",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab15-16",
+    "judul": "KHES Buku II Bab XV–XVI: Wadi'ah (Titipan) serta Ghashb dan Itlaf (Perampasan & Perusakan Harta, Pasal 409–451)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Ketentuan wadi'ah yad al-amanah & yad al-dhamanah, pengembalian titipan, serta tanggung jawab ganti rugi akibat perampasan (ghashb) dan perusakan harta langsung/tidak langsung (itlaf).",
+    "tabwib_id": "03.04",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 123,
+      "label_halaman": "Hlm. 123"
+    },
+    "slug": "khes-b2-bab15-16",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab17",
+    "judul": "KHES Buku II Bab XVII: Wakalah — Pemberian Kuasa Transaksi & Gugatan (Pasal 452–520)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Rukun wakalah, wakalah bi al-ujrah, batas kewenangan penerima kuasa pembelian/penjualan/gugatan, tanggung jawab wakil, dan berakhirnya kuasa.",
+    "tabwib_id": "03.04",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 133,
+      "label_halaman": "Hlm. 133"
+    },
+    "slug": "khes-b2-bab17",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab18-19",
+    "judul": "KHES Buku II Bab XVIII–XIX: Shulh (Perdamaian Sengketa) & Pelepasan Hak / Ibra' (Pasal 521–547)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Penyelesaian sengketa secara damai (shulh), perdamaian dengan kompensasi, gugatan dalam shulh, dan pembebasan/pelepasan hak (ibra').",
+    "tabwib_id": "03.04",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 151,
+      "label_halaman": "Hlm. 151"
+    },
+    "slug": "khes-b2-bab18-19",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "khes-b2-bab26-28",
+    "judul": "KHES Buku II Bab XXVI–XXVIII: Pembiayaan Multijasa, Qardh & Pembiayaan Rekening Koran Syariah (Pasal 603–615)",
+    "nomor_dokumen": "PERMA No. 2/2008 (KHES)",
+    "ringkasan": "Pembiayaan multijasa berbasis ijarah/kafalah, pinjaman kebajikan qardh tanpa tambahan yang dipersyaratkan, dan pembiayaan rekening koran syariah.",
+    "tabwib_id": "03.04",
+    "lembaga_id": "khes-perma-ma",
+    "tahun": 2008,
+    "jenis": "kompilasi",
+    "mode_akses": "pdf",
+    "tag": [
+      "KHES",
+      "PERMA 2/2008",
+      "Ekonomi Syariah",
+      "Hukum Akad"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "khes-perma-2-2008",
+      "halaman_mulai": 178,
+      "label_halaman": "Hlm. 178"
+    },
+    "slug": "khes-b2-bab26-28",
+    "lembaga_nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI"
+  },
+  {
+    "id": "dsn-fatwa-167-akad-rahn-dan-produk-rahn",
+    "judul": "Fatwa DSN-MUI No. 167/DSN-MUI/IX/2026 tentang Akad Rahn dan Produk Rahn",
+    "nomor_dokumen": "167/DSN-MUI/IX/2026",
+    "ringkasan": "Fatwa resmi Dewan Syariah Nasional Majelis Ulama Indonesia (DSN-MUI) Nomor 167/DSN-MUI/IX/2026 tahun 2026 tentang Akad Rahn dan Produk Rahn sebagai pedoman hukum dan kepatuhan syariah lembaga keuangan serta ekonomi syariah di Indonesia.",
+    "tabwib_id": "03.04",
+    "lembaga_id": "dsn-mui",
+    "tahun": 2026,
+    "jenis": "fatwa",
+    "mode_akses": "pdf",
+    "tag": [
+      "DSN-MUI",
+      "Fatwa Ekonomi Syariah",
+      "167/DSN-MUI/IX/2026",
+      "2026"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "dsn-fatwa-167-akad-rahn-dan-produk-rahn",
+      "halaman_mulai": 1,
+      "label_halaman": "Salinan Fatwa"
+    },
+    "slug": "dsn-fatwa-167-akad-rahn-dan-produk-rahn",
+    "lembaga_nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)"
+  },
+  {
+    "id": "dsn-fatwa-161-syirkah-milk-mutanaqishah-syirkah-",
+    "judul": "Fatwa DSN-MUI No. 161/DSN-MUI/VII/2025 tentang Syirkah Milk Mutanaqishah ( Syirkah al-Milk al-Mutanaqishah )",
+    "nomor_dokumen": "161/DSN-MUI/VII/2025",
+    "ringkasan": "Fatwa resmi Dewan Syariah Nasional Majelis Ulama Indonesia (DSN-MUI) Nomor 161/DSN-MUI/VII/2025 tahun 2025 tentang Syirkah Milk Mutanaqishah ( Syirkah al-Milk al-Mutanaqishah ) sebagai pedoman hukum dan kepatuhan syariah lembaga keuangan serta ekonomi syariah di Indonesia.",
+    "tabwib_id": "03.03",
+    "lembaga_id": "dsn-mui",
+    "tahun": 2025,
+    "jenis": "fatwa",
+    "mode_akses": "pdf",
+    "tag": [
+      "DSN-MUI",
+      "Fatwa Ekonomi Syariah",
+      "161/DSN-MUI/VII/2025",
+      "2025"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "dsn-fatwa-161-syirkah-milk-mutanaqishah-syirkah-",
+      "halaman_mulai": 1,
+      "label_halaman": "Salinan Fatwa"
+    },
+    "slug": "dsn-fatwa-161-syirkah-milk-mutanaqishah-syirkah",
+    "lembaga_nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)"
+  },
+  {
+    "id": "dsn-fatwa-160-ijarah-al-mal-al-musytarak-dan-al-",
+    "judul": "Fatwa DSN-MUI No. 160/DSN-MUI/VII/2024 tentang Ijarah al-Mal al-Musytarak dan al-Mal al-Musya'",
+    "nomor_dokumen": "160/DSN-MUI/VII/2024",
+    "ringkasan": "Fatwa resmi Dewan Syariah Nasional Majelis Ulama Indonesia (DSN-MUI) Nomor 160/DSN-MUI/VII/2024 tahun 2024 tentang Ijarah al-Mal al-Musytarak dan al-Mal al-Musya' sebagai pedoman hukum dan kepatuhan syariah lembaga keuangan serta ekonomi syariah di Indonesia.",
+    "tabwib_id": "03.04",
+    "lembaga_id": "dsn-mui",
+    "tahun": 2024,
+    "jenis": "fatwa",
+    "mode_akses": "pdf",
+    "tag": [
+      "DSN-MUI",
+      "Fatwa Ekonomi Syariah",
+      "160/DSN-MUI/VII/2024",
+      "2024"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "dsn-fatwa-160-ijarah-al-mal-al-musytarak-dan-al-",
+      "halaman_mulai": 1,
+      "label_halaman": "Salinan Fatwa"
+    },
+    "slug": "dsn-fatwa-160-ijarah-al-mal-al-musytarak-dan-al",
+    "lembaga_nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)"
+  },
+  {
+    "id": "dsn-fatwa-159-jual-beli-al-mal-al-musytarak-dan-",
+    "judul": "Fatwa DSN-MUI No. 159/DSN-MUI/VII/2024 tentang Jual Beli al-Mal al-Musytarak dan al-Mal al-Musya'",
+    "nomor_dokumen": "159/DSN-MUI/VII/2024",
+    "ringkasan": "Fatwa resmi Dewan Syariah Nasional Majelis Ulama Indonesia (DSN-MUI) Nomor 159/DSN-MUI/VII/2024 tahun 2024 tentang Jual Beli al-Mal al-Musytarak dan al-Mal al-Musya' sebagai pedoman hukum dan kepatuhan syariah lembaga keuangan serta ekonomi syariah di Indonesia.",
+    "tabwib_id": "03.02",
+    "lembaga_id": "dsn-mui",
+    "tahun": 2024,
+    "jenis": "fatwa",
+    "mode_akses": "pdf",
+    "tag": [
+      "DSN-MUI",
+      "Fatwa Ekonomi Syariah",
+      "159/DSN-MUI/VII/2024",
+      "2024"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "dsn-fatwa-159-jual-beli-al-mal-al-musytarak-dan-",
+      "halaman_mulai": 1,
+      "label_halaman": "Salinan Fatwa"
+    },
+    "slug": "dsn-fatwa-159-jual-beli-al-mal-al-musytarak-dan",
+    "lembaga_nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)"
+  },
+  {
+    "id": "dsn-fatwa-158-akad-i-arah",
+    "judul": "Fatwa DSN-MUI No. 158/DSN-MUI/VII/2024 tentang Akad I'arah",
+    "nomor_dokumen": "158/DSN-MUI/VII/2024",
+    "ringkasan": "Fatwa resmi Dewan Syariah Nasional Majelis Ulama Indonesia (DSN-MUI) Nomor 158/DSN-MUI/VII/2024 tahun 2024 tentang Akad I'arah sebagai pedoman hukum dan kepatuhan syariah lembaga keuangan serta ekonomi syariah di Indonesia.",
+    "tabwib_id": "03.04",
+    "lembaga_id": "dsn-mui",
+    "tahun": 2024,
+    "jenis": "fatwa",
+    "mode_akses": "pdf",
+    "tag": [
+      "DSN-MUI",
+      "Fatwa Ekonomi Syariah",
+      "158/DSN-MUI/VII/2024",
+      "2024"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "dsn-fatwa-158-akad-i-arah",
+      "halaman_mulai": 1,
+      "label_halaman": "Salinan Fatwa"
+    },
+    "slug": "dsn-fatwa-158-akad-i-arah",
+    "lembaga_nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)"
+  },
+  {
+    "id": "dsn-fatwa-153-pelunasan-utang-pembiayaan-murabah",
+    "judul": "Fatwa DSN-MUI No. 153/DSN-MUI/VI/2022 tentang Pelunasan Utang Pembiayaan Murabahah Sebelum Jatuh Tempo",
+    "nomor_dokumen": "153/DSN-MUI/VI/2022",
+    "ringkasan": "Fatwa resmi Dewan Syariah Nasional Majelis Ulama Indonesia (DSN-MUI) Nomor 153/DSN-MUI/VI/2022 tahun 2022 tentang Pelunasan Utang Pembiayaan Murabahah Sebelum Jatuh Tempo sebagai pedoman hukum dan kepatuhan syariah lembaga keuangan serta ekonomi syariah di Indonesia.",
+    "tabwib_id": "03.02",
+    "lembaga_id": "dsn-mui",
+    "tahun": 2022,
+    "jenis": "fatwa",
+    "mode_akses": "pdf",
+    "tag": [
+      "DSN-MUI",
+      "Fatwa Ekonomi Syariah",
+      "153/DSN-MUI/VI/2022",
+      "2022"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "dsn-fatwa-153-pelunasan-utang-pembiayaan-murabah",
+      "halaman_mulai": 1,
+      "label_halaman": "Salinan Fatwa"
+    },
+    "slug": "dsn-fatwa-153-pelunasan-utang-pembiayaan-murabah",
+    "lembaga_nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)"
+  },
+  {
+    "id": "dsn-fatwa-151-akad-samsarah",
+    "judul": "Fatwa DSN-MUI No. 151/DSN-MUI/VI/2022 tentang Akad Samsarah",
+    "nomor_dokumen": "151/DSN-MUI/VI/2022",
+    "ringkasan": "Fatwa resmi Dewan Syariah Nasional Majelis Ulama Indonesia (DSN-MUI) Nomor 151/DSN-MUI/VI/2022 tahun 2022 tentang Akad Samsarah sebagai pedoman hukum dan kepatuhan syariah lembaga keuangan serta ekonomi syariah di Indonesia.",
+    "tabwib_id": "03.04",
+    "lembaga_id": "dsn-mui",
+    "tahun": 2022,
+    "jenis": "fatwa",
+    "mode_akses": "pdf",
+    "tag": [
+      "DSN-MUI",
+      "Fatwa Ekonomi Syariah",
+      "151/DSN-MUI/VI/2022",
+      "2022"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "dsn-fatwa-151-akad-samsarah",
+      "halaman_mulai": 1,
+      "label_halaman": "Salinan Fatwa"
+    },
+    "slug": "dsn-fatwa-151-akad-samsarah",
+    "lembaga_nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)"
+  },
+  {
+    "id": "dsn-fatwa-133-al-musyarakah-al-muntahiyah-bi-al-",
+    "judul": "Fatwa DSN-MUI No. 133/DSN-MUI/X/2019 tentang Al-Musyarakah Al-Muntahiyah Bi al-Tamlik",
+    "nomor_dokumen": "133/DSN-MUI/X/2019",
+    "ringkasan": "Fatwa resmi Dewan Syariah Nasional Majelis Ulama Indonesia (DSN-MUI) Nomor 133/DSN-MUI/X/2019 tahun 2019 tentang Al-Musyarakah Al-Muntahiyah Bi al-Tamlik sebagai pedoman hukum dan kepatuhan syariah lembaga keuangan serta ekonomi syariah di Indonesia.",
+    "tabwib_id": "03.03",
+    "lembaga_id": "dsn-mui",
+    "tahun": 2019,
+    "jenis": "fatwa",
+    "mode_akses": "pdf",
+    "tag": [
+      "DSN-MUI",
+      "Fatwa Ekonomi Syariah",
+      "133/DSN-MUI/X/2019",
+      "2019"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "dsn-fatwa-133-al-musyarakah-al-muntahiyah-bi-al-",
+      "halaman_mulai": 1,
+      "label_halaman": "Salinan Fatwa"
+    },
+    "slug": "dsn-fatwa-133-al-musyarakah-al-muntahiyah-bi-al",
+    "lembaga_nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)"
+  },
+  {
+    "id": "dsn-fatwa-115-akad-mudharabah",
+    "judul": "Fatwa DSN-MUI No. 115/DSN-MUI/IX/2017 tentang Akad Mudharabah",
+    "nomor_dokumen": "115/DSN-MUI/IX/2017",
+    "ringkasan": "Fatwa resmi Dewan Syariah Nasional Majelis Ulama Indonesia (DSN-MUI) Nomor 115/DSN-MUI/IX/2017 tahun 2017 tentang Akad Mudharabah sebagai pedoman hukum dan kepatuhan syariah lembaga keuangan serta ekonomi syariah di Indonesia.",
+    "tabwib_id": "03.03",
+    "lembaga_id": "dsn-mui",
+    "tahun": 2017,
+    "jenis": "fatwa",
+    "mode_akses": "pdf",
+    "tag": [
+      "DSN-MUI",
+      "Fatwa Ekonomi Syariah",
+      "115/DSN-MUI/IX/2017",
+      "2017"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "dsn-fatwa-115-akad-mudharabah",
+      "halaman_mulai": 1,
+      "label_halaman": "Salinan Fatwa"
+    },
+    "slug": "dsn-fatwa-115-akad-mudharabah",
+    "lembaga_nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)"
+  },
+  {
+    "id": "dsn-fatwa-114-akad-syirkah",
+    "judul": "Fatwa DSN-MUI No. 114/DSN-MUI/IX/2017 tentang Akad Syirkah",
+    "nomor_dokumen": "114/DSN-MUI/IX/2017",
+    "ringkasan": "Fatwa resmi Dewan Syariah Nasional Majelis Ulama Indonesia (DSN-MUI) Nomor 114/DSN-MUI/IX/2017 tahun 2017 tentang Akad Syirkah sebagai pedoman hukum dan kepatuhan syariah lembaga keuangan serta ekonomi syariah di Indonesia.",
+    "tabwib_id": "03.03",
+    "lembaga_id": "dsn-mui",
+    "tahun": 2017,
+    "jenis": "fatwa",
+    "mode_akses": "pdf",
+    "tag": [
+      "DSN-MUI",
+      "Fatwa Ekonomi Syariah",
+      "114/DSN-MUI/IX/2017",
+      "2017"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "dsn-fatwa-114-akad-syirkah",
+      "halaman_mulai": 1,
+      "label_halaman": "Salinan Fatwa"
+    },
+    "slug": "dsn-fatwa-114-akad-syirkah",
+    "lembaga_nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)"
+  },
+  {
+    "id": "dsn-fatwa-113-akad-wakalah-bi-al-ujrah",
+    "judul": "Fatwa DSN-MUI No. 113/DSN-MUI/IX/2017 tentang Akad Wakalah bi Al-Ujrah",
+    "nomor_dokumen": "113/DSN-MUI/IX/2017",
+    "ringkasan": "Fatwa resmi Dewan Syariah Nasional Majelis Ulama Indonesia (DSN-MUI) Nomor 113/DSN-MUI/IX/2017 tahun 2017 tentang Akad Wakalah bi Al-Ujrah sebagai pedoman hukum dan kepatuhan syariah lembaga keuangan serta ekonomi syariah di Indonesia.",
+    "tabwib_id": "03.04",
+    "lembaga_id": "dsn-mui",
+    "tahun": 2017,
+    "jenis": "fatwa",
+    "mode_akses": "pdf",
+    "tag": [
+      "DSN-MUI",
+      "Fatwa Ekonomi Syariah",
+      "113/DSN-MUI/IX/2017",
+      "2017"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "dsn-fatwa-113-akad-wakalah-bi-al-ujrah",
+      "halaman_mulai": 1,
+      "label_halaman": "Salinan Fatwa"
+    },
+    "slug": "dsn-fatwa-113-akad-wakalah-bi-al-ujrah",
+    "lembaga_nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)"
+  },
+  {
+    "id": "dsn-fatwa-112-akad-ijarah",
+    "judul": "Fatwa DSN-MUI No. 112/DSN-MUI/IX/2017 tentang Akad Ijarah",
+    "nomor_dokumen": "112/DSN-MUI/IX/2017",
+    "ringkasan": "Fatwa resmi Dewan Syariah Nasional Majelis Ulama Indonesia (DSN-MUI) Nomor 112/DSN-MUI/IX/2017 tahun 2017 tentang Akad Ijarah sebagai pedoman hukum dan kepatuhan syariah lembaga keuangan serta ekonomi syariah di Indonesia.",
+    "tabwib_id": "03.04",
+    "lembaga_id": "dsn-mui",
+    "tahun": 2017,
+    "jenis": "fatwa",
+    "mode_akses": "pdf",
+    "tag": [
+      "DSN-MUI",
+      "Fatwa Ekonomi Syariah",
+      "112/DSN-MUI/IX/2017",
+      "2017"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "dsn-fatwa-112-akad-ijarah",
+      "halaman_mulai": 1,
+      "label_halaman": "Salinan Fatwa"
+    },
+    "slug": "dsn-fatwa-112-akad-ijarah",
+    "lembaga_nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)"
+  },
+  {
+    "id": "dsn-fatwa-111-akad-jual-beli-murabahah",
+    "judul": "Fatwa DSN-MUI No. 111/DSN-MUI/IX/2017 tentang Akad Jual Beli Murabahah",
+    "nomor_dokumen": "111/DSN-MUI/IX/2017",
+    "ringkasan": "Fatwa resmi Dewan Syariah Nasional Majelis Ulama Indonesia (DSN-MUI) Nomor 111/DSN-MUI/IX/2017 tahun 2017 tentang Akad Jual Beli Murabahah sebagai pedoman hukum dan kepatuhan syariah lembaga keuangan serta ekonomi syariah di Indonesia.",
+    "tabwib_id": "03.02",
+    "lembaga_id": "dsn-mui",
+    "tahun": 2017,
+    "jenis": "fatwa",
+    "mode_akses": "pdf",
+    "tag": [
+      "DSN-MUI",
+      "Fatwa Ekonomi Syariah",
+      "111/DSN-MUI/IX/2017",
+      "2017"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "dsn-fatwa-111-akad-jual-beli-murabahah",
+      "halaman_mulai": 1,
+      "label_halaman": "Salinan Fatwa"
+    },
+    "slug": "dsn-fatwa-111-akad-jual-beli-murabahah",
+    "lembaga_nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)"
+  },
+  {
+    "id": "dsn-fatwa-110-akad-jual-beli",
+    "judul": "Fatwa DSN-MUI No. 110/DSN-MUI/IX/2017 tentang Akad Jual Beli",
+    "nomor_dokumen": "110/DSN-MUI/IX/2017",
+    "ringkasan": "Fatwa resmi Dewan Syariah Nasional Majelis Ulama Indonesia (DSN-MUI) Nomor 110/DSN-MUI/IX/2017 tahun 2017 tentang Akad Jual Beli sebagai pedoman hukum dan kepatuhan syariah lembaga keuangan serta ekonomi syariah di Indonesia.",
+    "tabwib_id": "03.02",
+    "lembaga_id": "dsn-mui",
+    "tahun": 2017,
+    "jenis": "fatwa",
+    "mode_akses": "pdf",
+    "tag": [
+      "DSN-MUI",
+      "Fatwa Ekonomi Syariah",
+      "110/DSN-MUI/IX/2017",
+      "2017"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "dsn-fatwa-110-akad-jual-beli",
+      "halaman_mulai": 1,
+      "label_halaman": "Salinan Fatwa"
+    },
+    "slug": "dsn-fatwa-110-akad-jual-beli",
+    "lembaga_nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)"
+  },
+  {
+    "id": "bi-kneks-prinsip-ekonomi-syariah",
+    "judul": "Buku Seri Ekonomi Syariah Bank Indonesia & KNEKS: Nilai-Nilai dan Prinsip-Prinsip Ekonomi Syariah",
+    "nomor_dokumen": "Publikasi Resmi BI–KNEKS (2018)",
+    "ringkasan": "Publikasi resmi Bank Indonesia dan Komite Nasional Ekonomi dan Keuangan Syariah (KNEKS) mengenai fondasi filosofis, nilai, dan prinsip syariah dalam sistem ekonomi dan keuangan Indonesia.",
+    "tabwib_id": "03.01",
+    "lembaga_id": "ojk-bi-syariah",
+    "tahun": 2018,
+    "jenis": "pedoman",
+    "mode_akses": "pdf",
+    "tag": [
+      "Bank Indonesia",
+      "KNEKS",
+      "Ekonomi Syariah"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "bi-kneks-prinsip-ekonomi-syariah",
+      "halaman_mulai": 1,
+      "label_halaman": "Hlm. 1"
+    },
+    "slug": "bi-kneks-prinsip-ekonomi-syariah",
+    "lembaga_nama": "Otoritas Jasa Keuangan (POJK/SEOJK), Bank Indonesia (PBI) & KNEKS"
+  },
+  {
+    "id": "kneks-ayat-hadits-ekonomi-syariah",
+    "judul": "Buku Referensi KNEKS: Ayat-Ayat dan Hadits Ekonomi Syariah",
+    "nomor_dokumen": "Publikasi Resmi KNEKS",
+    "ringkasan": "Himpunan resmi dalil Al-Qur'an dan Hadits seputar akad, muamalah, perbankan, zakat, wakaf, dan tata kelola ekonomi syariah yang diterbitkan oleh Komite Nasional Ekonomi dan Keuangan Syariah (KNEKS).",
+    "tabwib_id": "03.01",
+    "lembaga_id": "ojk-bi-syariah",
+    "tahun": 2021,
+    "jenis": "pedoman",
+    "mode_akses": "pdf",
+    "tag": [
+      "Bank Indonesia",
+      "KNEKS",
+      "Ekonomi Syariah"
+    ],
+    "pdf": {
+      "dokumen_pdf_id": "kneks-ayat-hadits-ekonomi-syariah",
+      "halaman_mulai": 1,
+      "label_halaman": "Hlm. 1"
+    },
+    "slug": "kneks-ayat-hadits-ekonomi-syariah",
+    "lembaga_nama": "Otoritas Jasa Keuangan (POJK/SEOJK), Bank Indonesia (PBI) & KNEKS"
+  }
+]

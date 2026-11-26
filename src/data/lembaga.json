@@ -1,0 +1,74 @@
+[
+  {
+    "id": "khi-perundang-undangan",
+    "nama": "Kompilasi Hukum Islam (KHI) & Peraturan Perundang-undangan RI",
+    "singkatan": "KHI & UU/PP RI",
+    "kategori": "Hukum Positif Nasional",
+    "deskripsi": "Kompilasi Hukum Islam (Inpres No. 1/1991 — Buku I Perkawinan, Buku II Kewarisan, Buku III Perwakafan) beserta Undang-Undang & Peraturan Pemerintah terkait Hukum Keluarga, Peradilan Agama, Wakaf, Zakat, Perbankan Syariah, SBSN, Halal, dan Haji (JDIH BPK RI).",
+    "situs_resmi": "https://peraturan.bpk.go.id",
+    "warna_badge": "#0F3D2E"
+  },
+  {
+    "id": "khes-perma-ma",
+    "nama": "Kompilasi Hukum Ekonomi Syariah (KHES) & PERMA Mahkamah Agung RI",
+    "singkatan": "KHES & PERMA MA",
+    "kategori": "Regulasi Mahkamah Agung",
+    "deskripsi": "PERMA No. 2 Tahun 2008 tentang Kompilasi Hukum Ekonomi Syariah (4 Buku, 43 Bab, 796 Pasal) serta Peraturan Mahkamah Agung RI bidang Ekonomi Syariah, Mediasi, Dispensasi Kawin, Perempuan Berhadapan dengan Hukum, dan Peradilan Elektronik (e-Court).",
+    "situs_resmi": "https://kepaniteraan.mahkamahagung.go.id",
+    "warna_badge": "#1B5E43"
+  },
+  {
+    "id": "rumusan-kamar-ma",
+    "nama": "Rumusan Pleno Kamar Agama (SEMA) & Yurisprudensi Mahkamah Agung RI",
+    "singkatan": "Kamar Agama MA RI",
+    "kategori": "Yurisprudensi & SEMA",
+    "deskripsi": "Kompilasi Resmi Rumusan Hukum Hasil Rapat Pleno Kamar Agama Mahkamah Agung RI Tahun 2012–2025 (Cetakan ke-12, Februari 2026 — SEMA 04/2012 s.d. SEMA 01/2025), Kaidah Hukum Perdata Agama, dan Laporan Tahunan Kepaniteraan MA RI.",
+    "situs_resmi": "https://kepaniteraan.mahkamahagung.go.id/id/publikasi/rumusan-hukum-hasil-pleno-kamar",
+    "warna_badge": "#8F651D"
+  },
+  {
+    "id": "putusan-peradilan-agama",
+    "nama": "Putusan Pengadilan Agama, PTA & Publikasi Ditjen Badilag MA RI",
+    "singkatan": "Badilag & PTA / PA",
+    "kategori": "Putusan & Pedoman PA",
+    "deskripsi": "Salinan putusan resmi Pengadilan Tinggi Agama (PTA Palangka Raya), Pengadilan Agama (Pekalongan, Morotai, Bekasi), Mahkamah Syar'iyah (Sigli), Buku II Pedoman Peradilan Agama Revisi 2013, 16 edisi Majalah Peradilan Agama, dan kajian yudisial Hakim PA.",
+    "situs_resmi": "https://badilag.mahkamahagung.go.id",
+    "warna_badge": "#134E4A"
+  },
+  {
+    "id": "dsn-mui",
+    "nama": "Dewan Syariah Nasional — Majelis Ulama Indonesia (DSN-MUI)",
+    "singkatan": "DSN-MUI",
+    "kategori": "Fatwa Ekonomi Syariah",
+    "deskripsi": "Koleksi resmi Fatwa DSN-MUI terbuka publik (No. 110/DSN-MUI/IX/2017 hingga No. 169/DSN-MUI/IX/2026), Ta'limat (Surat Edaran), dan Pedoman Implementasi sebagai rujukan hukum ekonomi, perbankan, pasar modal, asuransi, dan fintech syariah di Indonesia.",
+    "situs_resmi": "https://dsnmui.or.id/kategori/fatwa/",
+    "warna_badge": "#065F46"
+  },
+  {
+    "id": "ojk-bi-syariah",
+    "nama": "Otoritas Jasa Keuangan (POJK/SEOJK), Bank Indonesia (PBI) & KNEKS",
+    "singkatan": "OJK · BI · KNEKS",
+    "kategori": "Regulasi Keuangan Syariah",
+    "deskripsi": "Peraturan OJK (POJK & SEOJK) dan Peraturan Bank Indonesia (PBI) bidang Perbankan Syariah, Unit Usaha Syariah, BPRS, Pasar Modal Syariah, Asuransi Syariah, serta publikasi resmi KNEKS & Bank Indonesia.",
+    "situs_resmi": "https://peraturan.bpk.go.id",
+    "warna_badge": "#1E40AF"
+  },
+  {
+    "id": "kemenag-bwi-bpjph",
+    "nama": "Kementerian Agama RI (PMA), Badan Wakaf Indonesia (BWI), BPJPH & BPKH",
+    "singkatan": "Kemenag · BWI · BPJPH",
+    "kategori": "Regulasi Wakaf, Zakat & Halal",
+    "deskripsi": "29 Regulasi Wakaf resmi Badan Wakaf Indonesia (BWI), Peraturan Menteri Agama (PMA) Pencatatan Pernikahan (PMA 30/2024) & Zakat/BAZNAS (PMA 15/2026), Peraturan BPJPH (Jaminan Produk Halal), dan Peraturan BPKH (Keuangan Haji).",
+    "situs_resmi": "https://www.bwi.go.id/regulasi/",
+    "warna_badge": "#166534"
+  },
+  {
+    "id": "qanun-aceh-ms",
+    "nama": "Qanun Syariat Islam Aceh & Yurisdiksi Mahkamah Syar'iyah",
+    "singkatan": "Qanun Aceh & MS",
+    "kategori": "Otonomi Khusus Syariat",
+    "deskripsi": "Qanun Provinsi Aceh resmi dari JDIH Pemerintah Aceh: Qanun Hukum Jinayat (No. 6/2014 & Perubahan No. 12/2025), Pergub Pelaksanaan Hukum Acara Jinayat (No. 5/2018), Qanun Lembaga Keuangan Syariah (No. 11/2018), Pokok-Pokok Syariat Islam (No. 8/2014), & Baitul Mal.",
+    "situs_resmi": "https://jdih.acehprov.go.id",
+    "warna_badge": "#7C2D12"
+  }
+]

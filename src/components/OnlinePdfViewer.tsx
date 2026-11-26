@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import {
   BookOpen,
@@ -8,11 +8,13 @@ import {
   FileText,
   Filter,
   ListFilter,
+  Loader2,
   Maximize2,
   Minimize2,
   Search,
   Sparkles,
   X,
+  Zap,
 } from "lucide-react";
 import type { DokumenPdf, JenisProdukHukum, ProdukHukum } from "@/types/catalog";
 import { PdfCanvasRenderer } from "./PdfCanvasRenderer";
@@ -38,6 +40,22 @@ const JENIS_LABELS: Record<JenisProdukHukum, string> = {
   pedoman: "Pedoman",
 };
 
+function getFastEmbedType(doc: DokumenPdf): "drive" | "archive" | "direct_inline" | null {
+  if (doc.url_viewer_alt?.includes("drive.google.com/file/d/")) return "drive";
+  if (doc.url_viewer_alt?.includes("archive.org/embed/")) return "archive";
+  // JDIH Aceh sends Content-Disposition: attachment (would trigger file download in iframe)
+  if (doc.url_pdf.includes("jdih.acehprov.go.id")) return null;
+  // Verified inline PDF hosts (28ms-187ms directly from Indonesian servers, zero proxy overhead)
+  if (
+    /docs\.paralegal\.id|mahkamahagung\.go\.id|bwi\.go\.id|pta-[a-z]+\.go\.id|pa-[a-z]+\.go\.id/i.test(
+      doc.url_pdf
+    )
+  ) {
+    return "direct_inline";
+  }
+  return null;
+}
+
 export function OnlinePdfViewer({
   doc,
   initialPage = 1,
@@ -45,6 +63,8 @@ export function OnlinePdfViewer({
   indexedEntries = [],
   activeEntryId,
 }: OnlinePdfViewerProps) {
+  const fastEmbedType = useMemo(() => getFastEmbedType(doc), [doc]);
+
   const [pageNum, setPageNum] = useState<number>(Math.max(1, initialPage));
   const [pageInput, setPageInput] = useState<string>(
     String(Math.max(1, initialPage))
@@ -57,9 +77,29 @@ export function OnlinePdfViewer({
     highlightTitle
   );
   const [expanded, setExpanded] = useState(false);
-  const [viewerMode, setViewerMode] = useState<"in_app" | "alt_embed" | "gdocs">(
-    "in_app"
+  // Default to ultra-fast direct embed (0 bytes via Vercel proxy) for Drive, Archive, and verified inline PDFs
+  const [viewerMode, setViewerMode] = useState<"fast_embed" | "in_app" | "gdocs">(
+    fastEmbedType ? "fast_embed" : "in_app"
   );
+  const [iframeLoaded, setIframeLoaded] = useState(false);
+
+  useEffect(() => {
+    if (viewerMode === "in_app" || iframeLoaded) return;
+    const t = setTimeout(() => setIframeLoaded(true), 2500);
+    return () => clearTimeout(t);
+  }, [viewerMode, pageNum, iframeLoaded]);
+
+  // On mobile browsers (Android/iOS), native raw PDF iframes don't render inline — switch direct_inline to Canvas automatically
+  useEffect(() => {
+    if (fastEmbedType !== "direct_inline") return;
+    const isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+    const pdfSupported =
+      typeof navigator !== "undefined" &&
+      ("pdfViewerEnabled" in navigator ? navigator.pdfViewerEnabled !== false : !isMobile);
+    if (isMobile || !pdfSupported) {
+      setViewerMode("in_app");
+    }
+  }, [fastEmbedType]);
 
   // Per-PDF Filter Sidebar
   const [filterQuery, setFilterQuery] = useState("");
@@ -107,6 +147,7 @@ export function OnlinePdfViewer({
       const safe = Math.min(maxP, Math.max(1, targetPage));
       setPageNum(safe);
       setPageInput(String(safe));
+      setIframeLoaded(false);
       if (item) {
         setActiveId(item.id);
         setActiveLabel(item.judul);
@@ -125,24 +166,35 @@ export function OnlinePdfViewer({
     setDetectedPages(total);
   }, []);
 
-  const altEmbedLabel = doc.url_viewer_alt?.includes("archive.org")
-    ? "Pratinjau Arsip"
-    : doc.url_viewer_alt?.includes("drive.google.com")
-    ? "Pratinjau Drive"
-    : "Pratinjau Alternatif";
+  const fastEmbedLabel =
+    fastEmbedType === "drive"
+      ? "Mode Cepat (Drive)"
+      : fastEmbedType === "archive"
+      ? "Mode Cepat (Arsip)"
+      : "Mode Cepat";
 
-  const fallbackIframeSrc = useMemo(() => {
-    if (viewerMode === "alt_embed" && doc.url_viewer_alt) {
-      if (doc.url_viewer_alt.includes("archive.org/embed/")) {
+  const canJumpInCurrentMode =
+    viewerMode === "in_app" ||
+    (viewerMode === "fast_embed" &&
+      (fastEmbedType === "direct_inline" || fastEmbedType === "archive"));
+
+  const iframeSrc = useMemo(() => {
+    if (viewerMode === "fast_embed") {
+      if (fastEmbedType === "archive" && doc.url_viewer_alt) {
         const zeroIdx = Math.max(0, pageNum - 1);
         return `${doc.url_viewer_alt}#page/n${zeroIdx}/mode/1up`;
       }
-      return doc.url_viewer_alt;
+      if (fastEmbedType === "drive" && doc.url_viewer_alt) {
+        return doc.url_viewer_alt;
+      }
+      if (fastEmbedType === "direct_inline") {
+        return `${doc.url_pdf}#page=${pageNum}&view=FitH`;
+      }
     }
     return `https://docs.google.com/gview?embedded=true&url=${encodeURIComponent(
       doc.url_pdf
     )}`;
-  }, [viewerMode, doc.url_viewer_alt, doc.url_pdf, pageNum]);
+  }, [viewerMode, fastEmbedType, doc.url_viewer_alt, doc.url_pdf, pageNum]);
 
   const totalPagesDisplay = detectedPages || doc.jumlah_halaman;
 
@@ -166,6 +218,23 @@ export function OnlinePdfViewer({
 
         <div className="flex flex-wrap items-center gap-2">
           <div className="inline-flex rounded-lg border border-[#e4e0d5] bg-white p-0.5 text-xs">
+            {fastEmbedType && (
+              <button
+                type="button"
+                onClick={() => {
+                  setIframeLoaded(false);
+                  setViewerMode("fast_embed");
+                }}
+                className={`inline-flex items-center gap-1 rounded-md px-2.5 py-1 font-semibold transition-colors ${
+                  viewerMode === "fast_embed"
+                    ? "bg-[#0f3d2e] text-white"
+                    : "text-[#31423b] hover:bg-[#f4f1e8]"
+                }`}
+              >
+                <Zap className="h-3 w-3 text-[#e5c07b]" />
+                {fastEmbedLabel}
+              </button>
+            )}
             <button
               type="button"
               onClick={() => setViewerMode("in_app")}
@@ -175,24 +244,14 @@ export function OnlinePdfViewer({
                   : "text-[#31423b] hover:bg-[#f4f1e8]"
               }`}
             >
-              Baca Langsung
+              Mode Canvas
             </button>
-            {doc.url_viewer_alt && (
-              <button
-                type="button"
-                onClick={() => setViewerMode("alt_embed")}
-                className={`rounded-md px-2.5 py-1 font-semibold transition-colors ${
-                  viewerMode === "alt_embed"
-                    ? "bg-[#0f3d2e] text-white"
-                    : "text-[#31423b] hover:bg-[#f4f1e8]"
-                }`}
-              >
-                {altEmbedLabel}
-              </button>
-            )}
             <button
               type="button"
-              onClick={() => setViewerMode("gdocs")}
+              onClick={() => {
+                setIframeLoaded(false);
+                setViewerMode("gdocs");
+              }}
               className={`rounded-md px-2.5 py-1 font-semibold transition-colors ${
                 viewerMode === "gdocs"
                   ? "bg-[#0f3d2e] text-white"
@@ -203,7 +262,7 @@ export function OnlinePdfViewer({
             </button>
           </div>
 
-          {viewerMode === "in_app" && (
+          {canJumpInCurrentMode && (
             <form
               onSubmit={handleManualJump}
               className="inline-flex items-center gap-1 rounded-lg border border-[#e4e0d5] bg-white px-2 py-1 text-xs"
@@ -442,22 +501,36 @@ export function OnlinePdfViewer({
               pageNum={pageNum}
               onPageChange={(p) => jumpToPage(p)}
               onTotalPagesLoaded={handleTotalPagesLoaded}
-              onFallbackRequested={() =>
-                setViewerMode(doc.url_viewer_alt ? "alt_embed" : "gdocs")
+              onFallbackRequested={() => {
+                setIframeLoaded(false);
+                setViewerMode(fastEmbedType ? "fast_embed" : "gdocs");
+              }}
+              fallbackLabel={
+                fastEmbedType ? `Coba ${fastEmbedLabel}` : "Coba Google Viewer"
               }
-              fallbackLabel={doc.url_viewer_alt ? `Coba ${altEmbedLabel}` : "Coba Google Viewer"}
               expanded={expanded}
             />
           ) : (
-            <iframe
-              key={`${viewerMode}-${pageNum}`}
-              src={fallbackIframeSrc}
-              title={`Pratinjau Online: ${doc.judul}`}
-              className={`w-full border-0 bg-[#f7f5ee] ${
-                expanded ? "h-[82vh] min-h-[680px]" : "h-[74vh] min-h-[580px]"
-              }`}
-              allow="fullscreen"
-            />
+            <div className="relative">
+              {!iframeLoaded && (
+                <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center bg-[#f7f5ee]/90">
+                  <div className="flex items-center gap-2.5 rounded-xl border border-[#e4e0d5] bg-white px-5 py-3 text-xs font-semibold text-[#0f3d2e] shadow-xs">
+                    <Loader2 className="h-4 w-4 animate-spin text-[#b4842e]" />
+                    <span>Membuka langsung dari sumber resmi...</span>
+                  </div>
+                </div>
+              )}
+              <iframe
+                key={`${viewerMode}-${pageNum}`}
+                src={iframeSrc}
+                title={`Pratinjau Online: ${doc.judul}`}
+                onLoad={() => setIframeLoaded(true)}
+                className={`w-full border-0 bg-[#f7f5ee] ${
+                  expanded ? "h-[82vh] min-h-[680px]" : "h-[74vh] min-h-[580px]"
+                }`}
+                allow="fullscreen"
+              />
+            </div>
           )}
 
           <div className="flex flex-wrap items-center justify-between gap-2 border-t border-[#e4e0d5] bg-[#f7f5ee] px-4 py-2 text-[11px] text-[#52615b]">

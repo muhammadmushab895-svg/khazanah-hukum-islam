@@ -3,7 +3,6 @@ import { getDokumenPdfById } from "@/lib/catalog";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 30;
-export const preferredRegion = "sin1";
 
 interface MetaCacheEntry {
   length: number;
@@ -200,7 +199,7 @@ export async function GET(req: NextRequest) {
         {
           headers: {
             "Cache-Control":
-              "public, max-age=1800, s-maxage=86400, stale-while-revalidate=86400",
+              "public, max-age=86400, s-maxage=604800, stale-while-revalidate=604800",
           },
         }
       );
@@ -224,8 +223,19 @@ export async function GET(req: NextRequest) {
       ? cachedMeta.resolvedUrl
       : normalizeDriveConfirmUrl(pdfDoc.url_pdf);
 
+  const sParam = req.nextUrl.searchParams.get("s");
+  const eParam = req.nextUrl.searchParams.get("e");
+  const isQueryChunk =
+    sParam !== null &&
+    eParam !== null &&
+    /^\d+$/.test(sParam) &&
+    /^\d+$/.test(eParam) &&
+    Number(eParam) >= Number(sParam);
+
   const upstreamHeaders = new Headers({ "User-Agent": BROWSER_UA });
-  const rangeHeader = req.headers.get("range");
+  const rangeHeader = isQueryChunk
+    ? `bytes=${sParam}-${eParam}`
+    : req.headers.get("range");
   if (rangeHeader) upstreamHeaders.set("Range", rangeHeader);
 
   try {
@@ -267,13 +277,13 @@ export async function GET(req: NextRequest) {
             continue;
           }
           // If upstream ignored Range and returned 200 full body, stream directly instead of buffering full file
-          if (r.status === 200) {
+          if (r.status === 200 && !isQueryChunk) {
             clearTimeout(timer);
             const fullHeaders = new Headers({
               "Content-Type": "application/pdf",
               "Content-Disposition": `inline; filename="${pdfDoc.id}.pdf"`,
               "Accept-Ranges": "none",
-              "Cache-Control": "public, max-age=3600, s-maxage=86400",
+              "Cache-Control": "public, max-age=86400, s-maxage=604800, stale-while-revalidate=604800",
             });
             const cl = r.headers.get("content-length");
             if (cl) fullHeaders.set("Content-Length", cl);
@@ -293,12 +303,25 @@ export async function GET(req: NextRequest) {
 
       if (!chunkBuf) throw lastBodyErr || new Error("Range chunk timed out");
 
+      // Query-param chunks return HTTP 200 so Vercel Edge CDN caches every chunk globally
+      if (isQueryChunk) {
+        const edgeHeaders = new Headers({
+          "Content-Type": "application/octet-stream",
+          "Content-Length": String(chunkBuf.byteLength),
+          "Cache-Control":
+            "public, max-age=86400, s-maxage=604800, stale-while-revalidate=604800",
+        });
+        if (chunkCR) edgeHeaders.set("X-Content-Range", chunkCR);
+        return new NextResponse(chunkBuf, { status: 200, headers: edgeHeaders });
+      }
+
       const rangeResHeaders = new Headers({
         "Content-Type": "application/pdf",
         "Content-Disposition": `inline; filename="${pdfDoc.id}.pdf"`,
         "Accept-Ranges": "bytes",
         "Content-Length": String(chunkBuf.byteLength),
-        "Cache-Control": "public, max-age=3600, s-maxage=86400",
+        "Cache-Control":
+          "public, max-age=86400, s-maxage=604800, stale-while-revalidate=604800",
       });
       if (chunkCR) rangeResHeaders.set("Content-Range", chunkCR);
 

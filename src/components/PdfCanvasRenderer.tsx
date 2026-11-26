@@ -36,8 +36,9 @@ type PdfDocumentLike = {
   destroy: () => Promise<void>;
 };
 
-const RANGE_CHUNK_SIZE = 262144; // 256 KB per chunk
-const DIRECT_FETCH_THRESHOLD = 2_000_000; // <= 2 MB: single direct fetch for instant open
+const RANGE_CHUNK_SIZE = 131072; // 128 KB edge-cached chunks for faster first page
+const DIRECT_FETCH_THRESHOLD = 350_000; // <= 350 KB: single fetch; larger PDFs use edge-cached chunks
+const clientMetaCache = new Map<string, { length: number; acceptRanges: boolean }>();
 
 export function PdfCanvasRenderer({
   docId,
@@ -73,35 +74,51 @@ export function PdfCanvasRenderer({
       setLoadInfo("Memeriksa dokumen PDF online...");
 
       try {
-        const pdfjs = await import("pdfjs-dist/legacy/build/pdf.mjs");
-        pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.min.mjs";
-
         const metaCtrl = new AbortController();
         abortControllers.add(metaCtrl);
-        const metaRes = await fetch(
-          `/api/pdf-proxy?doc=${encodeURIComponent(docId)}&meta=1`,
-          { signal: metaCtrl.signal }
-        );
-        abortControllers.delete(metaCtrl);
 
-        if (!metaRes.ok) {
-          throw new Error(`Dokumen belum merespons dari sumber resmi (HTTP ${metaRes.status}).`);
-        }
-        const meta = (await metaRes.json()) as {
+        // Run pdfjs bundle import and metadata probe in parallel (eliminates waterfall)
+        const cachedMeta = clientMetaCache.get(docId);
+        type MetaRes = {
           ok: boolean;
           length: number;
           acceptRanges: boolean;
           error?: string;
         };
+        const metaPromise: Promise<MetaRes> = cachedMeta
+          ? Promise.resolve({ ok: true, ...cachedMeta })
+          : fetch(`/api/pdf-proxy?doc=${encodeURIComponent(docId)}&meta=1`, {
+              signal: metaCtrl.signal,
+            }).then(async (res) => {
+              if (!res.ok) {
+                throw new Error(
+                  `Dokumen belum merespons dari sumber resmi (HTTP ${res.status}).`
+                );
+              }
+              return (await res.json()) as MetaRes;
+            });
+        const [pdfjs, meta] = await Promise.all([
+          import("pdfjs-dist/legacy/build/pdf.mjs"),
+          metaPromise,
+        ]);
+        abortControllers.delete(metaCtrl);
+
         if (!meta.ok) {
           throw new Error(meta.error || "Gagal memuat metadata PDF.");
         }
+        clientMetaCache.set(docId, {
+          length: meta.length,
+          acceptRanges: meta.acceptRanges,
+        });
         if (cancelled) return;
 
         const pdfjsVer = pdfjs.version || "6.5.438";
-        const cMapUrl = `https://unpkg.com/pdfjs-dist@${pdfjsVer}/cmaps/`;
-        const standardFontDataUrl = `https://unpkg.com/pdfjs-dist@${pdfjsVer}/standard_fonts/`;
-        const wasmUrl = "/pdf-wasm/";
+        // Load worker, cmaps, standard fonts, and wasm from fast global jsDelivr CDN (~118ms in ID vs slow origin)
+        const cdnBase = `https://cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjsVer}`;
+        pdfjs.GlobalWorkerOptions.workerSrc = `${cdnBase}/build/pdf.worker.min.mjs`;
+        const cMapUrl = `${cdnBase}/cmaps/`;
+        const standardFontDataUrl = `${cdnBase}/standard_fonts/`;
+        const wasmUrl = `${cdnBase}/wasm/`;
 
         let loadingTask;
 
@@ -130,10 +147,10 @@ export function PdfCanvasRenderer({
           });
         } else if (meta.length > 0 && meta.acceptRanges) {
           const mb = (meta.length / (1024 * 1024)).toFixed(1);
-          setLoadInfo(`Streaming parsial dokumen ${mb} MB (hemat kuota)...`);
+          setLoadInfo(`Streaming parsial cepat ${mb} MB...`);
 
           const MAX_SUB_CHUNK = RANGE_CHUNK_SIZE;
-          const MAX_CONCURRENT = 3;
+          const MAX_CONCURRENT = 4;
           const queue: (() => Promise<void>)[] = [];
           let activeCount = 0;
 
@@ -170,15 +187,13 @@ export function PdfCanvasRenderer({
                 abortControllers.add(ctrl);
                 const timer = setTimeout(() => ctrl.abort(), 14000);
                 try {
+                  // Use Edge-cacheable query params (?s=&e=) so Vercel CDN caches every chunk
                   const res = await fetch(
-                    `/api/pdf-proxy?doc=${encodeURIComponent(docId)}`,
-                    {
-                      headers: { Range: `bytes=${subStart}-${subEnd - 1}` },
-                      signal: ctrl.signal,
-                    }
+                    `/api/pdf-proxy?doc=${encodeURIComponent(docId)}&s=${subStart}&e=${subEnd - 1}`,
+                    { signal: ctrl.signal }
                   );
                   if (!res.ok && res.status !== 206) {
-                    throw new Error(`Range HTTP ${res.status}`);
+                    throw new Error(`Chunk HTTP ${res.status}`);
                   }
                   const chunk = new Uint8Array(await res.arrayBuffer());
                   clearTimeout(timer);

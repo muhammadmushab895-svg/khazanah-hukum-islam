@@ -3,6 +3,7 @@ import { getDokumenPdfById } from "@/lib/catalog";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 30;
+export const preferredRegion = "sin1";
 
 interface MetaCacheEntry {
   length: number;

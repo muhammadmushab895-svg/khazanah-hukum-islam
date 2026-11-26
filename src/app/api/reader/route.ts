@@ -4,6 +4,7 @@ import { fetchLiveLegalArticle } from "@/lib/reader";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 25;
+export const preferredRegion = "sin1";
 
 export async function GET(req: NextRequest) {
   const id = req.nextUrl.searchParams.get("id")?.trim();

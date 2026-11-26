@@ -580,7 +580,7 @@
       "label_halaman": "Salinan Resmi"
     },
     "slug": "bpk-peraturan-menteri-agama-nomor-20-tahun-2019",
-    "lembaga_nama": "Kementerian Agama RI (PMA), Badan Wakaf Indonesia (BWI), BPJPH & BPKH"
+    "lembaga_nama": "Kementerian Agama RI (PMA) & Badan Wakaf Indonesia (BWI)"
   },
   {
     "id": "bpk-peraturan-menteri-agama-nomor-22-tahun-2024",
@@ -603,7 +603,7 @@
       "label_halaman": "Salinan Resmi"
     },
     "slug": "bpk-peraturan-menteri-agama-nomor-22-tahun-2024",
-    "lembaga_nama": "Kementerian Agama RI (PMA), Badan Wakaf Indonesia (BWI), BPJPH & BPKH"
+    "lembaga_nama": "Kementerian Agama RI (PMA) & Badan Wakaf Indonesia (BWI)"
   },
   {
     "id": "bpk-peraturan-menteri-agama-nomor-30-tahun-2024",
@@ -626,29 +626,6 @@
       "label_halaman": "Salinan Resmi"
     },
     "slug": "bpk-peraturan-menteri-agama-nomor-30-tahun-2024",
-    "lembaga_nama": "Kementerian Agama RI (PMA), Badan Wakaf Indonesia (BWI), BPJPH & BPKH"
-  },
-  {
-    "id": "bpk-peraturan-menteri-agama-nomor-19-tahun-2018",
-    "judul": "Peraturan Menteri Agama Nomor 19 Tahun 2018 tentang Pencatatan Perkawinan",
-    "nomor_dokumen": "Peraturan Menteri Agama Nomor 19 Tahun 2018",
-    "ringkasan": "Peraturan Menteri Agama Nomor 19 Tahun 2018 tentang Pencatatan Perkawinan — peraturan perundang-undangan resmi Republik Indonesia yang bersumber langsung dari JDIH BPK RI.",
-    "tabwib_id": "01.01",
-    "lembaga_id": "kemenag-bwi-bpjph",
-    "tahun": 2018,
-    "jenis": "regulasi",
-    "mode_akses": "pdf",
-    "tag": [
-      "JDIH BPK RI",
-      "Peraturan",
-      "2018"
-    ],
-    "pdf": {
-      "dokumen_pdf_id": "bpk-peraturan-menteri-agama-nomor-19-tahun-2018",
-      "halaman_mulai": 1,
-      "label_halaman": "Salinan Resmi"
-    },
-    "slug": "bpk-peraturan-menteri-agama-nomor-19-tahun-2018",
-    "lembaga_nama": "Kementerian Agama RI (PMA), Badan Wakaf Indonesia (BWI), BPJPH & BPKH"
+    "lembaga_nama": "Kementerian Agama RI (PMA) & Badan Wakaf Indonesia (BWI)"
   }
 ]

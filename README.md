@@ -10,7 +10,7 @@ Aplikasi web progresif (PWA) mandiri berbasis **Next.js 15** untuk menelusuri da
 4. **Putusan Pengadilan Agama, PTA & Publikasi Ditjen Badilag MA RI** — Salinan resmi putusan banding PTA Palangka Raya, putusan PA/Mahkamah Syar'iyah, Buku II Pedoman Peradilan Agama Revisi 2013, Majalah Peradilan Agama, dan kajian hukum hakim PA.
 5. **Dewan Syariah Nasional — MUI (DSN-MUI)** — Koleksi Fatwa DSN-MUI terbuka publik (No. 110–169, 2017–2026), Ta'limat (Surat Edaran), dan Pedoman Implementasi.
 6. **Otoritas Jasa Keuangan (POJK/SEOJK), Bank Indonesia (PBI) & KNEKS** — Regulasi perbankan syariah, pasar modal syariah, asuransi syariah, serta publikasi resmi Bank Indonesia & KNEKS.
-7. **Kementerian Agama RI (PMA), Badan Wakaf Indonesia (BWI), BPJPH & BPKH** — 29 regulasi perwakafan BWI, PMA Pencatatan Nikah & Zakat, regulasi Jaminan Produk Halal (BPJPH), dan Keuangan Haji (BPKH).
+7. **Kementerian Agama RI (PMA) & Badan Wakaf Indonesia (BWI)** — 29 regulasi perwakafan BWI serta 10 Peraturan Menteri Agama (PMA) Pencatatan Pernikahan, Zakat & BAZNAS.
 8. **Qanun Syariat Islam Aceh & Yurisdiksi Mahkamah Syar'iyah** — Qanun Hukum Jinayat (No. 6/2014 & Perubahan No. 12/2025), Pergub Hukum Acara Jinayat, Qanun LKS (No. 11/2018), Pokok-Pokok Syariat Islam, dan Baitul Mal dari JDIH Aceh.
 
 ## Fitur Utama
